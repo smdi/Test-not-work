@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFF"
+    android:layout_height="match_parent"
+    tools:context="al_muntaqimcrescent2018.com.sign_in.MainActivity">
+
+    <ScrollView
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:background="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/FullName"
+                android:layout_width="40dp"
+                android:layout_marginTop="250dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/user" />
+
+            <AutoCompleteTextView
+                android:id="@+id/FullText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/FullName"
+                android:layout_alignLeft="@+id/email"
+                android:layout_alignStart="@+id/email"
+                android:ems="20"
+                android:hint="author" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cloud"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="54dp"
+                android:src="@drawable/clouds" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/Email"
+                android:layout_width="40dp"
+                android:layout_marginTop="170dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/email" />
+
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/PasswordImage"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="320dp"
+                android:src="@drawable/password" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/Heading"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignLeft="@+id/password"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_alignStart="@+id/password"-->
+            <!--android:layout_marginTop="54dp"-->
+            <!--android:text="Secure Share"-->
+            <!--android:textColor="#390029"-->
+            <!--android:textSize="25dp" />-->
+
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="44dp"
+                android:background="#FFF"
+                android:text="secure share"
+                android:textColor="#EC0EAF" />
+
+            <AutoCompleteTextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/PasswordImage"
+                android:layout_alignLeft="@+id/email"
+                android:layout_alignStart="@+id/email"
+                android:ems="20"
+                android:hint="********"
+                android:inputType="textPassword" />
+
+            <AutoCompleteTextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Email"
+                android:layout_marginLeft="42dp"
+                android:layout_marginStart="42dp"
+                android:hint="example@gmail.com"
+                android:ems="20"
+                android:layout_toEndOf="@+id/Email"
+                android:layout_toRightOf="@+id/Email"
+                />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

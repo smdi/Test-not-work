@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="@dimen/activity_horizontal_margin"
+              android:layout_marginStart="@dimen/activity_horizontal_margin"
+              android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="#FFF"
+        tools:ignore="WebViewLayout">
+    </WebView>
+
+    <ImageView
+        android:id="@+id/photoImageViewpdf"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/photoImageView"
+        android:layout_alignRight="@+id/photoImageView"
+        android:layout_below="@+id/nameTextViewbeside"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/doc1edited" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/photoImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="#0F339F"
+        android:layout_alignLeft="@+id/photoImageView"
+        android:layout_alignStart="@+id/photoImageView"
+        android:layout_below="@+id/photoImageView"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:text="Message" />
+
+    <TextView
+        android:id="@+id/nameTextViewbeside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/photoImageView"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="13dp"
+        android:text=" pushed by master : "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000"
+        android:textSize="10sp" />
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/imageName"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/photoImageView"-->
+        <!--android:layout_marginEnd="38dp"-->
+        <!--android:layout_marginRight="38dp"-->
+        <!--android:layout_toLeftOf="@+id/nameTextView"-->
+        <!--android:layout_toStartOf="@+id/nameTextView"-->
+        <!--android:text=" pushed by master : "-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="10sp"-->
+        <!--tools:text="image_name" />-->
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nameTextViewbeside"
+        android:layout_alignRight="@+id/nameTextViewbeside"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="10sp"
+        tools:text="Name" />
+
+
+
+
+</RelativeLayout>
